@@ -1109,7 +1109,7 @@ a.post-thumbnail:hover {
 }
 
 .entry-title {
-	font-size: 33px;
+	font-size: 27px;
 	font-weight: 300;
 	line-height: 1.0909090909;
 	text-transform: uppercase;
@@ -1260,10 +1260,12 @@ a.post-thumbnail:hover {
 .site-content .entry-summary,
 .page-content {
 	background-color: #fff;
+	font-size: 150%;
 	padding: 12px 30px 0;
 }
 
 .page .entry-content {
+	font-size: 100%;
 	padding-top: 0;
 }
 
@@ -4346,7 +4348,7 @@ a.post-thumbnail:hover {
 	margin-top: 0;
 }
 
-/* styling according with category */
+/** styling according with category **/
 /*musicas / music */
 article.category-musicas .entry-header {
 	border-top: 5px solid #8E44AD !important;
@@ -4361,7 +4363,7 @@ article.category-musicas .entry-meta .tag-links a:hover:before {
 	border-right-color: #8e44ad;
 }
 
-/* livros - books */
+/* livros / books */
 article.category-livros .entry-header {
 	border-top: 5px solid #2ECC71 !important;
 }
@@ -4375,6 +4377,7 @@ article.category-livros .entry-meta .tag-links a:hover:before {
 	border-right-color: #2ECC71;
 }
 
+/*filmes / movies */
 article.category-filmes .entry-header {
 	border-top: 5px solid #F9690E !important;
 }
@@ -4386,4 +4389,9 @@ article.category-filmes .entry-meta .tag-links a:hover {
 }
 article.category-filmes .entry-meta .tag-links a:hover:before {
 	border-right-color: #F9690E;
+}
+
+/* widgets and plugins */
+.widget_post-views ul {
+	list-style: decimal inside none;
 }
