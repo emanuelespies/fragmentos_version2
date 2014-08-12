@@ -3724,7 +3724,7 @@ a.post-thumbnail:hover {
 	    border-top: 1px solid rgba(255, 255, 255, 0.2);
 	    display: block;
 	    height: auto;
-	    line-height: unset;
+	    line-height: normal;
 	    position: relative;
 	    margin-left: 0;
 	}
