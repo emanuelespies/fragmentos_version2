@@ -956,14 +956,16 @@ span + .edit-link:before,
 }
 
 .site-navigation a:hover {
-	color: #858484;
+	background: #2b2b2b;
+	color: #fff;
 }
 
 .site-navigation .current_page_item > a,
 .site-navigation .current_page_ancestor > a,
 .site-navigation .current-menu-item > a,
 .site-navigation .current-menu-ancestor > a {
-	color: #858484;
+	background: #2b2b2b;
+	color: #fff;
 	font-weight: 900;
 }
 
@@ -975,6 +977,11 @@ span + .edit-link:before,
 	box-sizing:         border-box;
 	font-size: 14px;
 	padding-top: 24px;
+}
+
+.primary-navigation ul li:hover > ul,
+.primary-navigation ul li.focus > ul {
+	left: 222px;
 }
 
 .primary-navigation.toggled-on {
@@ -991,7 +998,7 @@ span + .edit-link:before,
 }
 
 .primary-navigation a {
-	padding: 7px 0;
+	padding: 7px;
 }
 
 /* Secondary Navigation */
@@ -1007,7 +1014,7 @@ span + .edit-link:before,
 }
 
 .menu-toggle {
-	background-color: #000;
+	background-color: #2C3E50;
 	border-radius: 0;
 	cursor: pointer;
 	font-size: 0;
@@ -1032,13 +1039,12 @@ span + .edit-link:before,
 .menu-toggle:active,
 .menu-toggle:focus,
 .menu-toggle:hover {
-	background-color: #444;
+	background-color: #2b2b2b;
 }
 
 .menu-toggle:focus {
 	outline: 1px dotted;
 }
-
 
 /**
  * 6.0 Content
@@ -1254,7 +1260,7 @@ a.post-thumbnail:hover {
 .site-content .entry-summary,
 .page-content {
 	background-color: #fff;
-	padding: 12px 10px 0;
+	padding: 12px 30px 0;
 }
 
 .page .entry-content {
@@ -2070,8 +2076,8 @@ a.post-thumbnail:hover {
 /* Secondary */
 
 #secondary {
-	background-color: #000;
-	border-top: 1px solid #000;
+	background-color: #2C3E50;
+	border-top: 1px solid #2C3E50;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	clear: both;
 	color: rgba(255, 255, 255, 0.7);
@@ -2079,6 +2085,7 @@ a.post-thumbnail:hover {
 	padding: 0 10px;
 	position: fixed;
 	z-index: 2;
+	min-height: 47px;
 }
 
 .site-description {
@@ -2092,6 +2099,7 @@ a.post-thumbnail:hover {
 /* Primary Sidebar */
 
 .primary-sidebar {
+	display: none;
 	padding-top: 48px;
 }
 
@@ -3026,7 +3034,6 @@ a.post-thumbnail:hover {
 	}
 
 	.list-view .site-content .entry-header {
-		background-color: transparent;
 		padding: 0;
 	}
 
@@ -3055,6 +3062,7 @@ a.post-thumbnail:hover {
 		font-weight: 900;
 		line-height: 1.2;
 		margin-bottom: 6px;
+		margin-top: 0;
 		text-transform: none;
 	}
 
@@ -3465,7 +3473,7 @@ a.post-thumbnail:hover {
 	}
 
 	.primary-navigation ul ul ul {
-		left: -999em;
+		left: 222px;
 		top: 0;
 	}
 
@@ -3631,6 +3639,7 @@ a.post-thumbnail:hover {
 	.featured-content {
 		margin-bottom: 0;
 	}
+
 }
 
 @media screen and (min-width: 1008px) {
@@ -3699,9 +3708,7 @@ a.post-thumbnail:hover {
 
 	.site-navigation ul {
 	    list-style: none outside none;
-	    margin: 0;
 	}
-
 
 	.primary-navigation {
 		font-size: 11px;
@@ -3719,6 +3726,7 @@ a.post-thumbnail:hover {
 	    height: auto;
 	    line-height: unset;
 	    position: relative;
+	    margin-left: 0;
 	}
 	.primary-navigation .menu-item-has-children > a:after {
 	    content: "";
@@ -3738,7 +3746,7 @@ a.post-thumbnail:hover {
 	}
 	.primary-navigation ul li:hover > ul,
 	.primary-navigation ul li.focus > ul {
-		left: 222px;
+		left: 182px;
 	}
 	.primary-navigation ul ul {
 	    background-color: #2b2b2b;
@@ -3746,10 +3754,6 @@ a.post-thumbnail:hover {
 	    position: absolute;
 	    top: 0;
 	    z-index: 99999;
-	    width: 182px;
-	}
-	.primary-navigation, 
-	.primary-navigation ul ul {
 	    width: 222px;
 	}
 	.primary-navigation ul ul a {
@@ -4005,6 +4009,11 @@ a.post-thumbnail:hover {
 	.grid .featured-content .entry-header {
 		height: 120px;
 	}
+
+	
+	.primary-sidebar {
+		display: block;
+	}
 }
 
 @media screen and (min-width: 1040px) {
@@ -4065,13 +4074,17 @@ a.post-thumbnail:hover {
 	}
 
 	.secondary-navigation,
-	.secondary-navigation ul ul {
+	.secondary-navigation ul ul, 
+	.primary-navigation, 
+	.primary-navigation ul ul {
 		width: 222px;
 	}
 
 	.secondary-navigation ul li:hover > ul,
-	.secondary-navigation ul li.focus > ul {
-		left: 202px;
+	.secondary-navigation ul li.focus > ul,
+	.primary-navigation ul li:hover > ul,
+	.primary-navigation ul li.focus > ul {
+		left: 222px;
 	}
 
 	.slider .featured-content .entry-title {
