@@ -29,6 +29,9 @@
 		?>
 
 		<div class="entry-meta">
+			<span class="post-format">
+				<small class="entry-format" href="<?php echo esc_url( get_post_format_link( 'quote' ) ); ?>">Fragmento</small>
+			</span>
 			<?php
 				if ( 'post' == get_post_type() )
 					twentyfourteen_posted_on();
@@ -47,6 +50,17 @@
 	<div class="entry-content">
 		<?php
 			the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyfourteen' ) );
+		?>
+			<p class="entry-custom"> 
+				<strong><?php the_field('onde'); ?></strong>
+			<?php
+				if (the_field('quem') != '') { ?>
+					<br /><br />
+					Fragmento sugerido por:
+					<strong><?php the_field('quem'); ?></strong>
+			<?php } ?>
+			</p>
+		<?php 	
 			wp_link_pages( array(
 				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentyfourteen' ) . '</span>',
 				'after'       => '</div>',
