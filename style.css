@@ -112,7 +112,7 @@ textarea {
 }
 
 body {
-	background: #f5f5f5;
+	background: #ecf0f1;
 }
 
 a {
@@ -4367,6 +4367,10 @@ a.post-thumbnail:hover {
 
 .entry-meta  small {
 	font-size: 12px;
+}
+
+.search-no-results .page-content {
+	padding-bottom: 30px;
 }
 
 

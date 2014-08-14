@@ -21,6 +21,7 @@ get_header(); ?>
 		get_template_part( 'featured-content' );
 	}
 ?>
+	<?php get_sidebar();?>
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 
@@ -44,5 +45,4 @@ get_header(); ?>
 </div><!-- #main-content -->
 
 <?php
-get_sidebar();
 get_footer();

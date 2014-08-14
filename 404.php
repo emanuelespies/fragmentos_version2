@@ -9,7 +9,10 @@
 
 get_header(); ?>
 
-
+	<?php 
+		get_sidebar( 'content' );
+		get_sidebar();
+	?>
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 
@@ -27,6 +30,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar( 'content' );
-get_sidebar();
 get_footer();
